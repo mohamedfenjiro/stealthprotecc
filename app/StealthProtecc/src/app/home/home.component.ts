@@ -13,6 +13,6 @@ export class HomeComponent implements OnInit {
     constructor(private _itemService: DataService) { }
 
     ngOnInit(): void {
-        this.items = this._itemService.getItems();
+        
     }
 }
