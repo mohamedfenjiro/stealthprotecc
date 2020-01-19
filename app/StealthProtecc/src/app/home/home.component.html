@@ -1,13 +1,61 @@
-<ActionBar>
-    <Label text="Home"></Label>
+<ActionBar backgroundColor="#4c4a6b">
+    <Label class="titleDashboard" text="Dashboard"></Label>
 </ActionBar>
 
-<GridLayout>
-    <ListView [items]="items">
-        <ng-template let-item="item">
-            <StackLayout>
-                <Label [nsRouterLink]="['../item', item.id]" [text]="item.name"></Label>
-            </StackLayout>
-        </ng-template>
-    </ListView>
+<DockLayout width="auto" height="auto" backgroundColor="#221f2e"
+stretchLastChild="false">
+<Label text="right" dock="right" width="1%"
+    backgroundColor="#221f2e">
+</Label>
+<Label text="left" dock="left" width="1%"
+    backgroundColor="#221f2e">
+</Label>
+<Label text="bottom" dock="bottom" height="1%" width="auto"
+    backgroundColor="#221f2e">
+</Label>
+<Label class="round" text="bottom" dock="bottom" height="15%"
+    width="auto" backgroundColor="#4c4a6b">
+</Label>
+<Label text="bottom" dock="bottom" height="1%" width="auto"
+    backgroundColor="#221f2e">
+</Label>
+<Label text="top" dock="top" height="1%"
+    backgroundColor="#221f2e">
+</Label>
+
+<GridLayout class="round" rows="*,*" dock="top" height="20%"
+    backgroundColor="#4c4a6b">
+    
+    <div row="0">
+    <Label class="text-status fas" text="&#xf1ce; Status:" 
+        backgroundColor="#4c4a6b">
+    </Label>
+    <label class="status" text="Camera: 24/24 connected"></label>
+</div>
+    <Label class="text-center" text="&#xf00c; All clear" row="1"
+        backgroundColor="#4c4a6b">
+    </Label>
+    
 </GridLayout>
+<Label text="top" dock="top" height="1%"
+    backgroundColor="#221f2e">
+</Label>
+
+<Label class="round" text="left" dock="left" width="45%"
+    backgroundColor="#4c4a6b">
+</Label>
+<Label dock="left" width="1.5%"
+    backgroundColor="#221f2e">
+</Label>
+
+<Label class="round" text="right" dock="top" width="auto"
+    height="30%" backgroundColor="#4c4a6b">
+</Label>
+<Label text="right" dock="top" width="auto" height="1%"
+    backgroundColor="#221f2e">
+</Label>
+<Label class="round" text="right" dock="top" width="auto"
+    height="30%" backgroundColor="#4c4a6b">
+</Label>
+
+</DockLayout>
