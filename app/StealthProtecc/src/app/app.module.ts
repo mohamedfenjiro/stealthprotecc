@@ -12,7 +12,8 @@ import { NativeScriptUIChartModule } from "nativescript-ui-chart/angular";
     imports: [
         NativeScriptModule,
         AppRoutingModule,
-        NativeScriptUIChartModule
+        NativeScriptUIChartModule,
+        
     ],
     declarations: [
         AppComponent

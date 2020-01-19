@@ -1,8 +1,16 @@
-<ActionBar>
-    <Label text="Browse"></Label>
+<ActionBar backgroundColor="#4c4a6b">
+    <Label class="title" text="Video"></Label>
 </ActionBar>
 
-<GridLayout class="page__content">
-    <Label class="page__content-icon far" text="&#xf1ea;"></Label>
-    <Label class="page__content-placeholder" text="<!-- Page content goes here -->"></Label>
+<GridLayout rows="5rem,60rem,*,60rem,*" >
+    <label backgroundColor="#4c4a6b" height="100%" class="label" row="1" text="19h06  -  Location: Principal  -  Type: Weapon"></label>
+    <VideoPlayer row="2"
+      src="https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
+      autoplay="false"
+      height="300"></VideoPlayer>
+      <label class="label" style="vertical-align: middle; border-radius: 15px;" backgroundColor="#4c4a6b" height="100%" row="3" text="19h06  -  Location: Lassonde  -  Type: Report"></label>
+      <VideoPlayer row="4"
+      src="https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
+      autoplay="false"
+      height="300"></VideoPlayer>
 </GridLayout>

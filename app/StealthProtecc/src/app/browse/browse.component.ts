@@ -1,8 +1,12 @@
 import { Component, OnInit } from "@angular/core";
+import { registerElement } from "nativescript-angular/element-registry";
+import { Video } from 'nativescript-videoplayer';
+registerElement("VideoPlayer", () => Video);
 
 @Component({
     selector: "Browse",
-    templateUrl: "./chat-view.xml"
+    templateUrl: "./browse.component.html",
+    styleUrls: ["./style.css"]
 })
 export class BrowseComponent implements OnInit {
     constructor() {

@@ -1,0 +1,12 @@
+.label {
+    vertical-align: middle;
+    padding-top: 20rem;
+    border-radius: 15px;
+}
+
+.title {
+    font-size: 35rem;
+}
+ActionBar {
+    padding-bottom: 5rem;
+}
