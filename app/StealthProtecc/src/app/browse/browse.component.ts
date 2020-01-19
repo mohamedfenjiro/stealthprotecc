@@ -2,7 +2,7 @@ import { Component, OnInit } from "@angular/core";
 
 @Component({
     selector: "Browse",
-    templateUrl: "./browse.component.html"
+    templateUrl: "./chat-view.xml"
 })
 export class BrowseComponent implements OnInit {
     constructor() {

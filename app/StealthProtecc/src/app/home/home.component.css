@@ -74,4 +74,24 @@
 .descTime {
     font-size: 18rem;
     color: #ffffff;
+    padding-left: 10rem;
+    padding-top: 20rem;
+}
+
+.iconBell {
+    font-size: 25rem;
+    text-align: center;
+    padding-top: 10rem;
+    color: #ffffff
+}
+.ssdesc {
+    text-decoration: underline;
+    font-size: 20rem;
+    padding-left: 20rem;
+    color: #bababa;
+}
+
+.button {
+    background-color:#68aac5;
+    font-family: "fa-solid-900";
 }

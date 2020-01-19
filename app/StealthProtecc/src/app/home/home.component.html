@@ -1,4 +1,4 @@
-<ActionBar backgroundColor="#4c4a6b">
+<ActionBar class="round" backgroundColor="#4c4a6b">
     <Label class="titleDashboard" text="Dashboard"></Label>
 </ActionBar>
 
@@ -13,10 +13,11 @@ stretchLastChild="false">
 <Label text="bottom" dock="bottom" height="1%" width="auto"
     backgroundColor="#221f2e">
 </Label>
-<Label class="round" text="bottom" dock="bottom" height="15%"
+<GridLayout class="round" dock="bottom" height="15%"
     width="auto" backgroundColor="#4c4a6b">
-</Label>
-<Label text="bottom" dock="bottom" height="1%" width="auto"
+    <button class="button" text="Analyze video..."></button>
+</GridLayout>
+<Label  dock="bottom" height="1%" width="auto"
     backgroundColor="#221f2e">
 </Label>
 <Label text="top" dock="top" height="1%"
@@ -51,22 +52,37 @@ stretchLastChild="false">
     <label col="1" row="5" text="Time elapsed" class="fas desc"></label>
     <label col="1" row="6" text="since last" class="fas desc"></label>
     <label col="1" row="7" text="detection:" class="fas desc"></label>
-    <label col="1" row="8" text="1day 20h 04min" class="fas descTime"></label>
+    <label col="0" row="8" colspan="2" text="{{timerString }}" class="fas descTime"></label>
     
-
 </GridLayout>
 <Label dock="left" width="1.5%"
     backgroundColor="#221f2e">
 </Label>
 
-<Label class="round" text="right" dock="top" width="auto"
-    height="30%" backgroundColor="#4c4a6b">
-</Label>
+<GridLayout class="round" rows="*,*,*" text="right" dock="top" width="auto"
+    height="20%" backgroundColor="#4c4a6b">
+    <label class="fas iconBell" row="0" text="&#xf0f3; Event:"></label>
+    <label class="fas ssdesc" row="1" text="0 new"></label>
+    <label class="fas ssdesc" row="2" text="3 archived"></label>
+</GridLayout>
 <Label text="right" dock="top" width="auto" height="1%"
     backgroundColor="#221f2e">
 </Label>
-<Label class="round" text="right" dock="top" width="auto"
-    height="30%" backgroundColor="#4c4a6b">
-</Label>
+<GridLayout class="round" rows="40rem,*" text="right" dock="top" width="auto"
+    height="40%" backgroundColor="#4c4a6b">
+    <label class="fas iconBell" row="0" text="&#xf03d; Camera:"></label>
+    <div row="1">
+    <GridLayout rows="*" dock="top" width="auto">
+        <RadPieChart allowAnimation="true" row="0">
+            <PieSeries tkPieSeries selectionMode="DataPoint" expandRadius="0.6"
+                outerRadiusFactor="0.7" [items]="pieSource" valueProperty="Amount"
+                legendLabel="Brand"></PieSeries>
+            <RadLegendView tkPieLegend position="Right" title="Aisle"
+                offsetOrigin="TopRight" width="80rem" enableSelection="true">
+            </RadLegendView>
+        </RadPieChart>
+    </GridLayout>
+</div>
+</GridLayout>
 
 </DockLayout>
