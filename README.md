@@ -1,6 +1,9 @@
-# Object-Detector-App
+![](images/main_menu.jpg)
+![](images/video_menu.jpg)
 
-A real-time object recognition application using [Google's TensorFlow Object Detection API](https://github.com/tensorflow/models/tree/master/research/object_detection) and [OpenCV](http://opencv.org/).
+# Gun-Detection-APP
+
+This is the project created at hackathon 2020. A real-time Gun and Knife detection application using [Google's TensorFlow Object Detection API](https://github.com/tensorflow/models/tree/master/research/object_detection) and [OpenCV](http://opencv.org/).
 
 ## Getting Started
 1. `conda env create -f environment.yml`
@@ -23,12 +26,3 @@ pytest -vs utils/
 - [Anaconda / Python 3.5](https://www.continuum.io/downloads)
 - [TensorFlow 1.2](https://www.tensorflow.org/)
 - [OpenCV 3.0](http://opencv.org/)
-
-## Notes
-- OpenCV 3.1 might crash on OSX after a while, so that's why I had to switch to version 3.0. See open issue and solution [here](https://github.com/opencv/opencv/issues/5874).
-- Moving the `.read()` part of the video stream in a multiple child processes did not work. However, it was possible to move it to a separate thread.
-
-## Copyright
-
-See [LICENSE](LICENSE) for details.
-Copyright (c) 2017 [Dat Tran](http://www.dat-tran.com/).
