@@ -1,5 +1,5 @@
-<img src="images/main_menu.jpg" width="80">
-<img src="images/video_menu.jpg" width="80">
+<img src="images/main_menu.jpg" width="120">
+<img src="images/video_menu.jpg" width="120">
 
 # Gun-Detection-APP
 
