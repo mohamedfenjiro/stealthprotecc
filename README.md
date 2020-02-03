@@ -2,7 +2,7 @@
 
 Main Menu                                     |  Video Menu
 :--------------------------------------------:|:-------------------------:
-<img src="images/main_menu.jpg" width="180">  |  <img src="images/video_menu.jpg" width="180">
+<img src="images/main_menu.jpg" width="280">  |  <img src="images/video_menu.jpg" width="280">
 # Gun-Detection-APP
 
 This is the project created at hackathon 2020. A real-time Gun and Knife detection application using [Google's TensorFlow Object Detection API](https://github.com/tensorflow/models/tree/master/research/object_detection) and [OpenCV](http://opencv.org/).
