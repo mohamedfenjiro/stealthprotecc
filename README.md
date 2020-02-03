@@ -1,5 +1,5 @@
-![](images/main_menu.jpg)
-![](images/video_menu.jpg)
+<img src="images/main_menu.jpg" width="80">
+<img src="images/video_menu.jpg" width="80">
 
 # Gun-Detection-APP
 
